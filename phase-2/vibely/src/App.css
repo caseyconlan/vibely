@@ -105,10 +105,9 @@ p {
 
 .quote-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin-left: 50px;
+  justify-content: space-between; /* Added */
   color: white;
 }
 
@@ -121,8 +120,8 @@ p {
 }
 
 .quote-author {
-  font-size: 18px;
-  text-align: right;
+  font-size: 14px;
+  text-align: center;
   margin-top: 10px;
   max-width: 500px;
 }
@@ -136,6 +135,18 @@ p {
   padding: 30px;
   max-width: 800px;
   margin: 0 auto;
+}
+
+.keepBtn, 
+.changeBtn {
+  font-size: 12px;
+  padding: 10px;
+  border: 2px solid purple;
+  border-radius: 20%;
+  background: black;
+  color: purple;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .image-container {
