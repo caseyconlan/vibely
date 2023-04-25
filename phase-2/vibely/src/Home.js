@@ -1,36 +1,35 @@
 import React, { useState, useEffect } from "react";
 import LikeDislikeButtons from "./Buttons";
 import "./App.css";
+import "./QuoteCard";
+import QuoteCard from "./QuoteCard";
+import ImageCard from "./ImageCard";
 
 function Home() {
-  const [img, setImg] = useState("");
-  const [quote, setQuote] = useState({});
-  const [isMounted, setIsMounted] = useState(false);
+  const [image, setImage] = useState("");
+  const [quote, setQuote] = useState([]);
 
   useEffect(() => {
-    setIsMounted(true);
-    return () => setIsMounted(false);
+    fetch("https://picsum.photos/500").then((r) => setImage(r.url));
+    fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
+      .then((r) => r.json())
+      .then((returnData) => setQuote(returnData.data[0]));
   }, []);
 
-  useEffect(() => {
-    if (isMounted) {
-      fetch("https://picsum.photos/500").then((r) => setImg(r.url));
-      fetch("https://quote-garden.onrender.com/api/v3/quotes/random?count=1")
-        .then((r) => r.json())
-        .then(({ data }) => setQuote(data[0]));
-    }
-  }, [isMounted]);
+  const { id, quoteText, quoteAuthor } = quote;
+
+  console.log(quoteText);
+  console.log(image);
 
   return (
     <div className="home-container">
-      <div className="image-container">
-        <img src={img} alt="Random" />
-      </div>
-      <div className="quote-container">
-        <p className="quote">{quote.quoteText}</p>
-        <p className="author">- {quote.quoteAuthor}</p>
-        <LikeDislikeButtons />
-      </div>
+      <ImageCard image={image} />
+      <QuoteCard
+        key={id}
+        id={id}
+        quoteText={quoteText}
+        quoteAuthor={quoteAuthor}
+      />
     </div>
   );
 }
