@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
+import LikeDislikeButtons from "./Buttons";
+import "./App.css";
 
 function Home() {
   const [img, setImg] = useState("");
-  const [quotes, setQuotes] = useState([]);
+  const [quote, setQuote] = useState({});
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -13,20 +15,22 @@ function Home() {
   useEffect(() => {
     if (isMounted) {
       fetch("https://picsum.photos/500").then((r) => setImg(r.url));
-      fetch("https://quote-garden.onrender.com/api/v3/quotes/random?count=3")
+      fetch("https://quote-garden.onrender.com/api/v3/quotes/random?count=1")
         .then((r) => r.json())
-        .then(({ data }) => setQuotes(data));
+        .then(({ data }) => setQuote(data[0]));
     }
   }, [isMounted]);
 
-  const quotesToDisplay = quotes.map(({ id, quoteText }) => {
-    return <p key={id}>{quoteText}</p>;
-  });
-
   return (
-    <div>
-      <img src={img}></img>
-      <div class="quotes">{quotesToDisplay}</div>
+    <div className="home-container">
+      <div className="image-container">
+        <img src={img} alt="Random" />
+      </div>
+      <div className="quote-container">
+        <p className="quote">{quote.quoteText}</p>
+        <p className="author">- {quote.quoteAuthor}</p>
+        <LikeDislikeButtons />
+      </div>
     </div>
   );
 }
