@@ -10,7 +10,7 @@ function Home() {
   const [quote, setQuote] = useState([]);
 
   useEffect(() => {
-    fetch("https://picsum.photos/500").then((r) => setImage(r.url));
+    fetch("https://picsum.photos/350").then((r) => setImage(r.url));
     fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
       .then((r) => r.json())
       .then((returnData) => setQuote(returnData.data[0]));

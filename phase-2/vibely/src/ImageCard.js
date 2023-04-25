@@ -1,7 +1,11 @@
 function ImageCard({ image }) {
   return (
     <div className="image-container">
-      <img src={image} alt="Randomly Generated Photo" />
+      <button className="keepBtn">Keep</button>
+      <div className="image">
+        <img src={image} alt="Randomly Generated Photo" />
+      </div>
+      <button className="changeBtn">Change</button>
     </div>
   );
 }
