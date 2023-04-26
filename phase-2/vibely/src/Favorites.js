@@ -2,9 +2,10 @@ import React from "react";
 import "./App.css";
 
 function Favorites({ favorites, setFavorites }) {
-
   const handleRemoveFavorite = (favIndex) => {
-    setFavorites((prevFavorites) => prevFavorites.filter((_, index) => index !== favIndex));
+    setFavorites((prevFavorites) =>
+      prevFavorites.filter((_, index) => index !== favIndex)
+    );
   };
 
   return (
@@ -16,7 +17,12 @@ function Favorites({ favorites, setFavorites }) {
             <img src={fav.image} alt="Favorite" />
             <p>{fav.quoteText}</p>
             <p>{fav.quoteAuthor}</p>
-            <button className="removeBtn" onClick={() => handleRemoveFavorite(index)}>Remove</button>
+            <button
+              className="removeBtn"
+              onClick={() => handleRemoveFavorite(index)}
+            >
+              Remove
+            </button>
           </div>
         ))}
       </div>

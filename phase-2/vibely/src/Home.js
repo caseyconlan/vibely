@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import LikeDislikeButtons from "./Buttons";
 import "./App.css";
 import "./QuoteCard";
 import QuoteCard from "./QuoteCard";
@@ -32,6 +31,7 @@ function Home({ favorites, setFavorites }) {
   function changeImg(imgUrl) {
     setImage(imgUrl);
   }
+
 
   const { id, quoteText, quoteAuthor } = quote;
 
