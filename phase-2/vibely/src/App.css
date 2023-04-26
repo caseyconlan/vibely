@@ -15,9 +15,9 @@ p {
   margin-bottom: 20px;
 }
 
-p {
-  font-size: 24px;
-  font-weight: bold;
+p1 {
+  font-size: 18px;
+  font-weight: light;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -145,12 +145,12 @@ p {
 }
 
 .imgChangeBtn:hover {
-  background-color: #a211cf;
+  background-color: white;
   color: #222326;
 }
 
 .imgKeepBtn:hover {
-  background-color: #a211cf;
+  background-color: white;
   color: #222326;
 }
 
@@ -181,4 +181,123 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.favorites-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 400px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+}
+
+.remove-favorite-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #a211cf;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.remove-favorite-button:hover {
+  background-color: #a211cf;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  position: relative;
+}
+
+.team-member-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.team-member h3 {
+  margin-top: 20px;
+}
+
+.team-member p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .team-member {
+    width: 90%;
+  }
 }
