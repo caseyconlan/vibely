@@ -10,16 +10,12 @@ function Home({ favorites, setFavorites }) {
   const [quote, setQuote] = useState([]);
 
   useEffect(() => {
-<<<<<<< HEAD
-    fetch("https://picsum.photos/350").then((r) => setImage(r.url));
-=======
     let ignore = false;
     fetch("https://picsum.photos/350").then((r) => {
       if (!ignore) {
         setImage(r.url);
       }
     });
->>>>>>> 9d63ee883ae5bc6613611ec17add552615ccde5e
     fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
       .then((r) => r.json())
       .then((returnData) => {
@@ -39,7 +35,6 @@ function Home({ favorites, setFavorites }) {
 
   const { id, quoteText, quoteAuthor } = quote;
 
-<<<<<<< HEAD
   const handleKeep = () => {
     const newFavorite = { id, quoteText, quoteAuthor, image };
     setFavorites([...favorites, newFavorite]);
@@ -48,11 +43,6 @@ function Home({ favorites, setFavorites }) {
   return (
     <div className="home-container">
       <ImageCard image={image} onKeep={handleKeep} />
-=======
-  return (
-    <div className="home-container">
-      <ImageCard image={image} changeImg={changeImg} />
->>>>>>> 9d63ee883ae5bc6613611ec17add552615ccde5e
       <QuoteCard
         key={id}
         id={id}
