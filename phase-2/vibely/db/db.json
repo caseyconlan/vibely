@@ -1,0 +1,44 @@
+{
+    "inspirojis": [
+      {
+        "id": 1,
+        "image": "https://fastly.picsum.photos/id/35/350/350.jpg?hmac=D6X8jB9NocSCGdCqptY5IxWV3bLp_5T5qYKBP95hy20",
+        "quoteText": "Politics is not an exact science.",
+        "quoteAuthor": "Otto von Bismark",
+        "likes": 0,
+        "dislikes": 0
+      },
+      {
+        "id": 2,
+        "image": "https://fastly.picsum.photos/id/1001/350/350.jpg?hmac=43DzvZuNbpS0wQ36JY-Sb_2VWM5JLZtbKf3oobmD0yI",
+        "quoteText": "Never to lie is to have no lock on your door, you are never wholly alone.",
+        "quoteAuthor": "Elizabeth Bowen",
+        "likes": 0,
+        "dislikes": 0
+      },
+      {
+        "id": 3,
+        "image": "https://fastly.picsum.photos/id/913/350/350.jpg?hmac=7TRBilwop4WcuvemebDqlBPB1GvjiYxryaF2TAnpnaI",
+        "quoteText": "If I ever have sex with someone I might be able to develop a sense of humor.",
+        "quoteAuthor": "Kate Beckinsale",
+        "likes": 0,
+        "dislikes": 0
+      },
+      {
+        "id": 4,
+        "image": "https://fastly.picsum.photos/id/509/350/350.jpg?hmac=V8slBFsDI33VF4BTvqxB2QsMH_ILncHSZKxFtbVaMHE",
+        "quoteText": "Architecture is not an inspirational business, it's a rational procedure to do sensible and hopefully beautiful things that's all.",
+        "quoteAuthor": "Harry Seidler",
+        "likes": 0,
+        "dislikes": 0
+      },
+      {
+        "id": 5,
+        "image": "https://fastly.picsum.photos/id/483/350/350.jpg?hmac=nIRrwJlVjbobpySzJRKQlGhN7XL-Q7UgzUi9sVWFmxk",
+        "quoteText": "Before Nelson Mandela was arrested in 1962, he was an angry, relatively young man. He founded the ANC's military wing. When he was released, he surprised everyone because he was talking about reconciliation and forgiveness and not about revenge.",
+        "quoteAuthor": "Desmond Tutu",
+        "likes": 0,
+        "dislikes": 0
+      }   
+    ]
+  }
