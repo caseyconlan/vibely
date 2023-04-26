@@ -24,7 +24,6 @@ p {
 
 .home-container {
   border-radius: 10%;
-  flex-direction: column;
   align-items: center;
   background: #222326;
   margin: 5%;
@@ -151,6 +150,29 @@ p {
 }
 
 .imgKeepBtn:hover {
+  background-color: #a211cf;
+  color: #222326;
+}
+
+.saveBtnContainer {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.saveBtn {
+  font-size: 35px;
+  padding: 10px;
+  border: 2px solid #a211cf;
+  border-radius: 20%;
+  background: #222326;
+  color: #a211cf;
+  cursor: pointer;
+  margin-bottom: 3%;
+}
+
+.saveBtn:hover {
   background-color: #a211cf;
   color: #222326;
 }

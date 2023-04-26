@@ -7,9 +7,10 @@ import ImageCard from "./ImageCard";
 
 function Home() {
   const [image, setImage] = useState("");
-  const [quote, setQuote] = useState([]);
+  const [quote, setQuote] = useState({});
 
   useEffect(() => {
+    console.log("running effect");
     fetch("https://picsum.photos/350").then((r) => setImage(r.url));
     fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
       .then((r) => r.json())
@@ -30,6 +31,9 @@ function Home() {
         quoteText={quoteText}
         quoteAuthor={quoteAuthor}
       />
+      <div className="saveBtnContainer">
+        <button className="saveBtn">Save</button>
+      </div>
     </div>
   );
 }
