@@ -5,12 +5,11 @@ import "./QuoteCard";
 import QuoteCard from "./QuoteCard";
 import ImageCard from "./ImageCard";
 
-function Home() {
+function Home({ favorites, setFavorites }) {
   const [image, setImage] = useState("");
-  const [quote, setQuote] = useState({});
+  const [quote, setQuote] = useState([]);
 
   useEffect(() => {
-    console.log("running effect");
     fetch("https://picsum.photos/350").then((r) => setImage(r.url));
     fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
       .then((r) => r.json())
@@ -19,21 +18,20 @@ function Home() {
 
   const { id, quoteText, quoteAuthor } = quote;
 
-  console.log(image);
-  console.log(quote);
+  const handleKeep = () => {
+    const newFavorite = { id, quoteText, quoteAuthor, image };
+    setFavorites([...favorites, newFavorite]);
+  };
 
   return (
     <div className="home-container">
-      <ImageCard image={image} />
+      <ImageCard image={image} onKeep={handleKeep} />
       <QuoteCard
         key={id}
         id={id}
         quoteText={quoteText}
         quoteAuthor={quoteAuthor}
       />
-      <div className="saveBtnContainer">
-        <button className="saveBtn">Save</button>
-      </div>
     </div>
   );
 }

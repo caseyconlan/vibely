@@ -1,33 +1,23 @@
-import React, { useState } from "react";
-import QuoteCard from "./QuoteCard";
-import ImageCard from "./ImageCard";
+import React from "react";
 import "./App.css";
 
-function Favorites() {
-  const [favorites, setFavorites] = useState([]);
+function Favorites({ favorites, setFavorites }) {
 
-  const handleRemoveFavorite = (id) => {
-    const updatedFavorites = favorites.filter((f) => f.id !== id);
-    setFavorites(updatedFavorites);
+  const handleRemoveFavorite = (favIndex) => {
+    setFavorites((prevFavorites) => prevFavorites.filter((_, index) => index !== favIndex));
   };
 
   return (
     <div className="favorites-container">
-      <h1>Favorites</h1>
-      <div className="card-container">
-        {favorites.map(({ id, quoteText, quoteAuthor, image }) => (
-          <div key={id} className="card">
-            <button
-              className="remove-favorite-button"
-              onClick={() => handleRemoveFavorite(id)}
-            >
-              X
-            </button>
-            <ImageCard image={image} />
-            <QuoteCard id={id} quoteText={quoteText} quoteAuthor={quoteAuthor} />
-          </div>
-        ))}
-      </div>
+      <h2>Favorites</h2>
+      {favorites.map((fav, index) => (
+        <div key={index} className="fav-card">
+          <img src={fav.image} alt="Favorite" />
+          <p>{fav.quoteText}</p>
+          <p>{fav.quoteAuthor}</p>
+          <button className="removeBtn" onClick={() => handleRemoveFavorite(index)}>Remove</button>
+        </div>
+      ))}
     </div>
   );
 }

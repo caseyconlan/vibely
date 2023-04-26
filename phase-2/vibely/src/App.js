@@ -1,24 +1,29 @@
+import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
-import Favorites from "./Favorites";
 import About from "./About";
+import Favorites from "./Favorites";
 
 function App() {
+  const [favorites, setFavorites] = useState([]);
+
   return (
-    <Router>
-      <div className="App">
+    <div className="App">
+      <Router>
         <NavBar />
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/favorites" component={Favorites} />
+          <Route exact path="/">
+            <Home favorites={favorites} setFavorites={setFavorites} />
+          </Route>
+          <Route exact path="/about" component={About} />
+          <Route exact path="/favorites">
+            <Favorites favorites={favorites} setFavorites={setFavorites} />
+          </Route>
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
