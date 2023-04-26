@@ -77,57 +77,47 @@ p1 {
 
 }
 
-.keepBtn {
-  font-size: 12px;
-  padding: 10px;
-  border: 2px solid #a211cf;
-  border-radius: 20%;
-  background: #222326;
+.backBtn {
+  font-size: 30px;
   color: #a211cf;
   cursor: pointer;
   margin-left: 10%;
 }
 
-.changeBtn {
-  font-size: 12px;
-  padding: 10px;
-  border: 2px solid #a211cf;
-  border-radius: 20%;
-  background: #222326;
+.fwdBtn {
+  font-size: 30px;
   color: #a211cf;
   cursor: pointer;
   margin-right: 10%;
 }
 
-.changeBtn:hover {
-  background-color: #a211cf;
-  color: #222326;
+.fwdBtn:hover {
+  color: #cf11c9;
 }
-.keepBtn:hover {
-  background-color: #a211cf;
-  color: #222326;
+.backBtn:hover {
+  color: #cf11c9;
 }
 
-.imgKeepBtn {
-  font-size: 12px;
-  padding: 10px;
-  border: 2px solid #a211cf;
-  border-radius: 20%;
-  background: #222326;
+.imgBackBtn {
+  font-size: 30px;
   color: #a211cf;
   margin-left: 20%;
   cursor: pointer;
 }
 
-.imgChangeBtn {
-  font-size: 12px;
-  padding: 10px;
-  border: 2px solid #a211cf;
-  border-radius: 20%;
-  background: #222326;
+.imgFwdBtn {
+  font-size: 30px;
   color: #a211cf;
   margin-right: 20%;
   cursor: pointer;
+}
+
+.imgFwdBtn:hover {
+  color: #cf11c9;
+}
+
+.imgBackBtn:hover {
+  color: #cf11c9;
 }
 
 .image-container {
@@ -142,16 +132,6 @@ p1 {
 .image {
   margin: 3%;
 
-}
-
-.imgChangeBtn:hover {
-  background-color: white;
-  color: #222326;
-}
-
-.imgKeepBtn:hover {
-  background-color: white;
-  color: #222326;
 }
 
 .saveBtnContainer {
@@ -172,8 +152,10 @@ p1 {
   margin-bottom: 3%;
 }
 
+
 .saveBtn:hover {
-  background-color: #a211cf;
+  background-color: #cf11c9;
+  border: 2px solid #cf11c9;
   color: #222326;
 }
 
