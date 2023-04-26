@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./NavBar";
@@ -8,6 +8,14 @@ import Favorites from "./Favorites";
 
 function App() {
   const [favorites, setFavorites] = useState([]);
+
+  console.log(favorites);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/inspirojis")
+      .then((r) => r.json())
+      .then((data) => setFavorites(data));
+  }, []);
 
   return (
     <div className="App">
