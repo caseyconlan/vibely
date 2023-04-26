@@ -18,6 +18,16 @@ function Home() {
 
   const { id, quoteText, quoteAuthor } = quote;
 
+  const handleFavorite = () => {
+    const favoriteQuote = { id, quoteText, quoteAuthor };
+    const favoriteImage = { url: image };
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    localStorage.setItem(
+      "favorites",
+      JSON.stringify([...favorites, { quote: favoriteQuote, image: favoriteImage }])
+    );
+  };
+
   console.log(image);
   console.log(quote);
 
