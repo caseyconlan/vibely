@@ -63,6 +63,22 @@
       "likes": 0,
       "dislikes": 0,
       "id": 8
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/93/350/350.jpg?hmac=euxXn1ppUHpURRg_JmAdg9r11BVl7i4OvSsSpPtBz3o",
+      "quote": "People say that money is not the key to happiness, but I always figured if you have enough money, you can have a key made.",
+      "author": "Joan Rivers",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 9
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/686/350/350.jpg?hmac=-4Rqxs2NGFWVdJdM6vT1Z1Dh79A36rxWIvGLSMTzWN4",
+      "quote": "A great photograph is one that fully expresses what one feels, in the deepest sense, about what is being photographed.",
+      "author": "Ansel Adams",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 10
     }
   ]
 }

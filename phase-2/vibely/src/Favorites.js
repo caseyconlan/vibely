@@ -19,7 +19,7 @@ function Favorites({ favorites, setFavorites }) {
             <p>{author}</p>
             <button
               className="removeBtn"
-              onClick={() => handleRemoveFavorite(index)}
+              onClick={() => handleRemoveFavorite({ id })}
             >
               Remove
             </button>
