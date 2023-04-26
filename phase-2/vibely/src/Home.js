@@ -9,14 +9,6 @@ function Home() {
   const [image, setImage] = useState("");
   const [quote, setQuote] = useState({});
 
-  // useEffect(() => {
-  //   console.log("running effect");
-  //   fetch("https://picsum.photos/350").then((r) => setImage(r.url));
-  //   fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
-  //     .then((r) => r.json())
-  //     .then((returnData) => setQuote(returnData.data[0]));
-  // }, []);
-
   useEffect(() => {
     let ignore = false;
     fetch("https://picsum.photos/350").then((r) => {
@@ -31,16 +23,21 @@ function Home() {
           setQuote(returnData.data[0]);
         }
       });
+
+    return () => {
+      ignore = true;
+    };
   }, []);
+
+  function changeImg(imgUrl) {
+    setImage(imgUrl);
+  }
 
   const { id, quoteText, quoteAuthor } = quote;
 
-  console.log(image);
-  console.log(quote);
-
   return (
     <div className="home-container">
-      <ImageCard image={image} />
+      <ImageCard image={image} changeImg={changeImg} />
       <QuoteCard
         key={id}
         id={id}
