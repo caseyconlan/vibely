@@ -4,7 +4,7 @@ import "./QuoteCard";
 import QuoteCard from "./QuoteCard";
 import ImageCard from "./ImageCard";
 
-function Home({ favorites, setFavorites }) {
+function Home({ setFavorites, favorites }) {
   const [image, setImage] = useState("");
   const [quote, setQuote] = useState([]);
 
@@ -28,23 +28,46 @@ function Home({ favorites, setFavorites }) {
     };
   }, []);
 
-  function changeImg(imgUrl) {
-    setImage(imgUrl);
-  }
-
-
   const { id, quoteText, quoteAuthor } = quote;
 
-  const handleKeep = () => {
-    const newFavorite = { id, quoteText, quoteAuthor, image };
-    setFavorites([...favorites, newFavorite]);
+  const newFavorite = {
+    img: "",
+    quote: "",
+    author: "",
+    likes: 0,
+    dislikes: 0,
   };
+
+  function handleClick() {
+    const updateNewFavorite = {
+      ...newFavorite,
+      img: image,
+      quote: quoteText,
+      author: quoteAuthor,
+    };
+    fetch("http://localhost:3001/inspirojis", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updateNewFavorite),
+    })
+      .then((r) => r.json())
+      .then((addedFavorite) => setFavorites([...favorites, addedFavorite]));
+  }
 
   return (
     <div className="home-container">
-      <ImageCard image={image} onKeep={handleKeep} />
-      <QuoteCard key={id} id={id} quoteText={quoteText} quoteAuthor={quoteAuthor} />
-      <button className="saveBtn" onClick={handleKeep}>Save</button>
+      <ImageCard image={image} />
+      <QuoteCard
+        key={id}
+        id={id}
+        quoteText={quoteText}
+        quoteAuthor={quoteAuthor}
+      />
+      <button className="saveBtn" onClick={handleClick}>
+        Save
+      </button>
     </div>
   );
 }
