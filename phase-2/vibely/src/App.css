@@ -31,24 +31,29 @@ p {
 }
 
 .navbar {
-  width: 100%;
+  max-width: 100vw;
   background-color: #222326;
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  display: flex;
-  justify-content: space-evenly;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.navbar ul {
-  display: flex;
-  list-style-type: none;
+#vibely {
+  color: #a211cf;
+  font-size: 30px;
+  
 }
 
-.navbar ul li {
-  cursor: pointer;
+.navbar-flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flex-item {
+  margin-left: 3%;
 }
 
 .quote-container {

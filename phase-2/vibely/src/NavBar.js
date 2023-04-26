@@ -3,10 +3,12 @@ import React from "react";
 function NavBar() {
   return (
     <div className="navbar">
-      <div>Home</div>
-      <div>New</div>
-      <div>Favorites</div>
-      <div>About</div>
+      <div id="vibely">Vibely</div>
+      <div className="navbar-flex-container">
+        <div className="flex-item">Home</div>
+        <div className="flex-item">About</div>
+        <div className="flex-item">Favorites</div>
+      </div>
     </div>
   );
 }
