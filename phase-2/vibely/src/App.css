@@ -150,12 +150,14 @@ p1 {
   color: #a211cf;
   cursor: pointer;
   margin-bottom: 3%;
+  display: block;
+  margin: 0 auto;
 }
 
 
 .saveBtn:hover {
-  background-color: #cf11c9;
-  border: 2px solid #cf11c9;
+  background-color: #a211cf;
+  border: 2px solid #a211cf;
   color: #222326;
 }
 
@@ -336,6 +338,13 @@ img {
   font-weight: bold;
 }
 
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+
 .removeBtn {
   background-color: #a211cf;
   color: #fff;
@@ -343,7 +352,8 @@ img {
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
-  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
   font-size: 1rem;
 }
 
@@ -351,6 +361,30 @@ img {
   background-color: #880ead;
 }
 
+<<<<<<< HEAD
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.fav-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  text-align: center;
+}
+
+.fav-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.favorites-container {
+  margin-top: 2rem;
+=======
 .saveBtn {
   background-color: #a211cf; /* Purple */
   border: none;
@@ -364,4 +398,5 @@ img {
   cursor: pointer;
   border-radius: 8px;
   align-items: flex-start;
+>>>>>>> main
 }
