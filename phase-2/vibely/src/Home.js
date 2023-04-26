@@ -18,8 +18,8 @@ function Home() {
 
   const { id, quoteText, quoteAuthor } = quote;
 
-  console.log(quoteText);
   console.log(image);
+  console.log(quote);
 
   return (
     <div className="home-container">
