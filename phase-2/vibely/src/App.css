@@ -40,9 +40,8 @@ p1 {
 }
 
 #vibely {
-  color: #a211cf;
+  color: yellowgreen;
   font-size: 30px;
-  
 }
 
 .navbar-flex-container {
@@ -92,10 +91,10 @@ p1 {
 }
 
 .fwdBtn:hover {
-  color: #cf11c9;
+  color: yellowgreen;
 }
 .backBtn:hover {
-  color: #cf11c9;
+  color: yellowgreen;
 }
 
 .imgBackBtn {
@@ -113,11 +112,11 @@ p1 {
 }
 
 .imgFwdBtn:hover {
-  color: #cf11c9;
+  color: yellowgreen;
 }
 
 .imgBackBtn:hover {
-  color: #cf11c9;
+  color: yellowgreen;
 }
 
 .image-container {
@@ -399,3 +398,40 @@ img {
   border-radius: 8px;
   align-items: flex-start;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 70px;
+}
+
+#vibely {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navbar-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-flex-container a:focus,
+.navbar-flex-container a:hover {
+  color: yellowgreen;
+  outline: none;
+}
+
+
+.flex-item {
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flex-item:last-child {
+  margin-right: 0;
+}
+
+
