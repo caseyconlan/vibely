@@ -9,12 +9,28 @@ function Home() {
   const [image, setImage] = useState("");
   const [quote, setQuote] = useState({});
 
+  // useEffect(() => {
+  //   console.log("running effect");
+  //   fetch("https://picsum.photos/350").then((r) => setImage(r.url));
+  //   fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
+  //     .then((r) => r.json())
+  //     .then((returnData) => setQuote(returnData.data[0]));
+  // }, []);
+
   useEffect(() => {
-    console.log("running effect");
-    fetch("https://picsum.photos/350").then((r) => setImage(r.url));
+    let ignore = false;
+    fetch("https://picsum.photos/350").then((r) => {
+      if (!ignore) {
+        setImage(r.url);
+      }
+    });
     fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
       .then((r) => r.json())
-      .then((returnData) => setQuote(returnData.data[0]));
+      .then((returnData) => {
+        if (!ignore) {
+          setQuote(returnData.data[0]);
+        }
+      });
   }, []);
 
   const { id, quoteText, quoteAuthor } = quote;
