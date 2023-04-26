@@ -350,3 +350,18 @@ img {
 .removeBtn:hover {
   background-color: #880ead;
 }
+
+.saveBtn {
+  background-color: #a211cf; /* Purple */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 8px;
+  align-items: flex-start;
+}
