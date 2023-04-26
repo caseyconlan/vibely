@@ -43,12 +43,8 @@ function Home({ favorites, setFavorites }) {
   return (
     <div className="home-container">
       <ImageCard image={image} onKeep={handleKeep} />
-      <QuoteCard
-        key={id}
-        id={id}
-        quoteText={quoteText}
-        quoteAuthor={quoteAuthor}
-      />
+      <QuoteCard key={id} id={id} quoteText={quoteText} quoteAuthor={quoteAuthor} />
+      <button className="saveBtn" onClick={handleKeep}>Save</button>
     </div>
   );
 }
