@@ -376,3 +376,19 @@ img {
 .favorites-container {
   margin-top: 2rem;
 }
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #a211cf;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  align-items: baseline;
+  padding: 0 1rem;
+}
+
+.navbar-brand:hover {
+  color: #ccc;
+}
+
