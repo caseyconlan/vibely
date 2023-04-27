@@ -111,6 +111,54 @@
       "likes": 0,
       "dislikes": 0,
       "id": 14
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/548/350/350.jpg?hmac=iK_7E3TlbnplZT4eJGNvCytOOQ6YZbgbHSmgeoJa75E",
+      "quote": "It was the experience of mystery - even if mixed with fear - that engendered religion.",
+      "author": "Albert Einstein",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 15
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/1079/350/350.jpg?hmac=Epec_-lBgx5nNNGNwoR1SfxOKNmuJiRCCyDQNOgVD34",
+      "quote": "The strong man is the one who is able to intercept at will the communication between the senses and the mind.",
+      "author": "Napoleon Bonaparte",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 16
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/905/350/350.jpg?hmac=bfnE5XGuUSAk9bTwB53MK_dbVPo_dS_iEISUlgt_Mc4",
+      "quote": "Accordingly, it is our task to ensure that the Government formulates policies that foster the continued development of the IT sector while also providing for citizens' access to technology and opportunity for economic advancement.",
+      "author": "Tim Holden",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 17
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/779/350/350.jpg?hmac=yw62HLLhJhJvw-3uwdF4CoFmC4g_EDpfqPMyP8t_jCs",
+      "quote": "I would go out with women my age, but there are no women my age.",
+      "author": "George Burns",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 18
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/365/350/350.jpg?hmac=x5kf75e2o0cmDepd0N8ZhaihsVmYbMITEWiynkJJB3k",
+      "quote": "My brother Jim and I spent many wonderful summers working on dairy farms in Wisconsin owned by Mom's cousins, and as members of our local Boy Scout troop.",
+      "author": "Peter Agre",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 19
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/651/350/350.jpg?hmac=F-UFxxbr3biMCiPjdyrhCnA94_P3RJuxaKZmBBG-Rrk",
+      "quote": "We hope that, when the insects take over the world, they will remember with gratitude how we took them along on all our picnics.",
+      "author": "Bill Vaughan",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 20
     }
   ]
 }

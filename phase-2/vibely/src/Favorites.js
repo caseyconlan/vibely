@@ -17,12 +17,7 @@ function Favorites({ favorites, setFavorites }) {
             <img src={img} alt="Favorite" />
             <p>{quote}</p>
             <p>{author}</p>
-            <button
-              className="removeBtn"
-              onClick={() => handleRemoveFavorite({ id })}
-            >
-              Remove
-            </button>
+            <button className="removeBtn" onClick={() => handleRemoveFavorite(id)}>Remove</button>
           </div>
         ))}
       </div>
