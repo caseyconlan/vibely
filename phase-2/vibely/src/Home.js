@@ -74,7 +74,8 @@ function Home({ setFavorites, favorites }) {
         id={id}
         quoteText={quoteText}
         quoteAuthor={quoteAuthor}
-        handleNextQuote={handleNextQuote}
+        setQuote={setQuote}
+        quote={quote}
       />
       <div className="saveBtnContainer">
         <button className="saveBtn" onClick={handleClick}>

@@ -71,6 +71,14 @@
       "likes": 0,
       "dislikes": 0,
       "id": 9
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/159/350/350.jpg?hmac=PPWwvteVG887pQSFG3cp9E-TOaMJu6Bxfa1jpIiP5_w",
+      "quote": "The crucial question one comes back to is the examination without that experience is meaningless. And I think it's true that society is becoming more and more passive, less and less fired up with enthusiasm, in many spheres.",
+      "author": "Peter Hammill",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 10
     }
   ]
 }
