@@ -2,10 +2,13 @@ import React from "react";
 import "./App.css";
 
 function Favorites({ favorites, setFavorites }) {
-  const handleRemoveFavorite = (favIndex) => {
+  const handleRemoveFavorite = (prevId) => {
     setFavorites((prevFavorites) =>
-      prevFavorites.filter((_, index) => index !== favIndex)
+      prevFavorites.filter(({ id }) => id !== prevId)
     );
+    fetch(`http://localhost:3001/inspirojis/${prevId}`, {
+      method: "DELETE",
+    });
   };
 
   return (
@@ -17,7 +20,12 @@ function Favorites({ favorites, setFavorites }) {
             <img src={img} alt="Favorite" />
             <p>{quote}</p>
             <p>{author}</p>
-            <button className="removeBtn" onClick={() => handleRemoveFavorite(id)}>Remove</button>
+            <button
+              className="removeBtn"
+              onClick={() => handleRemoveFavorite(id)}
+            >
+              Remove
+            </button>
           </div>
         ))}
       </div>
