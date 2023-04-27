@@ -385,6 +385,23 @@ img {
   margin-top: 2rem;
 }
 
+<<<<<<< HEAD
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #a211cf;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  align-items: baseline;
+  padding: 0 1rem;
+}
+
+.navbar-brand:hover {
+  color: #ccc;
+}
+
+=======
 .saveBtn {
   background-color: #a211cf; /* Purple */
   border: none;
@@ -399,3 +416,4 @@ img {
   border-radius: 8px;
   align-items: flex-start;
 }
+>>>>>>> main
