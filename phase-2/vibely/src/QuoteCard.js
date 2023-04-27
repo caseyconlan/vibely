@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-function QuoteCard({ id, quoteText, quoteAuthor }) {
+function QuoteCard({ id, quoteText, quoteAuthor, handleNextQuote }) {
   return (
     <div className="quote-container">
       <p className="backBtn">&#60;</p>
@@ -9,7 +9,9 @@ function QuoteCard({ id, quoteText, quoteAuthor }) {
         <p className="quote-text">{quoteText}</p>
         <p className="quote-author">- {quoteAuthor}</p>
       </div>
-      <p className="fwdBtn">&#62;</p>
+      <p className="fwdBtn" onClick={handleNextQuote}>
+        &#62;
+      </p>
     </div>
   );
 }

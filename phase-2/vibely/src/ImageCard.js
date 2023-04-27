@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function ImageCard({ image, changeImg }) {
+function ImageCard({ image, handleNextImg }) {
   const [prevImages, setPrevImages] = useState({
     imgUrl: "",
   });
@@ -11,7 +11,9 @@ function ImageCard({ image, changeImg }) {
       <div className="image">
         <img src={image} alt="Randomly Generated Photo" />
       </div>
-      <p className="imgFwdBtn">&#62;</p>
+      <p className="imgFwdBtn" onClick={handleNextImg}>
+        &#62;
+      </p>
     </div>
   );
 }

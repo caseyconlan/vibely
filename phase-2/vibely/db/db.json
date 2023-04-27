@@ -63,6 +63,14 @@
       "likes": 0,
       "dislikes": 0,
       "id": 8
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/475/350/350.jpg?hmac=gPoSVyKXpAhQ2rWjnh9NdOOHmC049dTosLIZcVb3o14",
+      "quote": "And how can poetry stand up against its new conditions? Its position is perfectly precarious.",
+      "author": "John C. Ransom",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 9
     }
   ]
 }

@@ -28,6 +28,16 @@ function Home({ setFavorites, favorites }) {
     };
   }, []);
 
+  function handleNextImg() {
+    fetch("https://picsum.photos/350").then((r) => setImage(r.url));
+  }
+
+  function handleNextQuote() {
+    fetch("https://quote-garden.onrender.com/api/v3/quotes/random")
+      .then((r) => r.json())
+      .then((returnData) => setQuote(returnData.data[0]));
+  }
+
   const { id, quoteText, quoteAuthor } = quote;
 
   const newFavorite = {
@@ -58,12 +68,13 @@ function Home({ setFavorites, favorites }) {
 
   return (
     <div className="home-container">
-      <ImageCard image={image} />
+      <ImageCard image={image} handleNextImg={handleNextImg} />
       <QuoteCard
         key={id}
         id={id}
         quoteText={quoteText}
         quoteAuthor={quoteAuthor}
+        handleNextQuote={handleNextQuote}
       />
       <button className="saveBtn" onClick={handleClick}>
         Save
