@@ -338,6 +338,13 @@ img {
   font-weight: bold;
 }
 
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+
 .removeBtn {
   background-color: #a211cf;
   color: #fff;
@@ -345,7 +352,8 @@ img {
   border-radius: 5px;
   padding: 5px 10px;
   cursor: pointer;
-  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
   font-size: 1rem;
 }
 
@@ -377,6 +385,7 @@ img {
   margin-top: 2rem;
 }
 
+<<<<<<< HEAD
 .navbar-brand {
   font-size: 2.5rem;
   font-weight: bold;
@@ -392,3 +401,19 @@ img {
   color: #ccc;
 }
 
+=======
+.saveBtn {
+  background-color: #a211cf; /* Purple */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+>>>>>>> main
