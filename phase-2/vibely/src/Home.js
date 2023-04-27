@@ -76,9 +76,11 @@ function Home({ setFavorites, favorites }) {
         quoteAuthor={quoteAuthor}
         handleNextQuote={handleNextQuote}
       />
-      <button className="saveBtn" onClick={handleClick}>
-        Save
-      </button>
+      <div className="saveBtnContainer">
+        <button className="saveBtn" onClick={handleClick}>
+          Save
+        </button>
+      </div>
     </div>
   );
 }
