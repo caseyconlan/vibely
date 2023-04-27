@@ -29,6 +29,10 @@ p1 {
   margin: 5%;
 }
 
+a {
+  color: #a211cf;
+}
+
 .navbar-flex-container a {
   color: #a211cf;
   text-decoration: none;
