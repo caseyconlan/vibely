@@ -68,7 +68,11 @@ function Home({ setFavorites, favorites }) {
 
   return (
     <div className="home-container">
-      <ImageCard image={image} handleNextImg={handleNextImg} />
+      <ImageCard
+        image={image}
+        handleNextImg={handleNextImg}
+        setImage={setImage}
+      />
       <QuoteCard
         key={id}
         id={id}
