@@ -55,30 +55,6 @@
       "likes": 0,
       "dislikes": 0,
       "id": 7
-    },
-    {
-      "img": "https://fastly.picsum.photos/id/847/350/350.jpg?hmac=WfMF9UZsL71aG1fuUfN5h5RSRC0n8ITkp-8-_fhhTao",
-      "quote": "Hey, I'm a Catholic deer hunter, I am happy to be clinging to my guns and my religion.",
-      "author": "Paul Ryan",
-      "likes": 0,
-      "dislikes": 0,
-      "id": 8
-    },
-    {
-      "img": "https://fastly.picsum.photos/id/475/350/350.jpg?hmac=gPoSVyKXpAhQ2rWjnh9NdOOHmC049dTosLIZcVb3o14",
-      "quote": "And how can poetry stand up against its new conditions? Its position is perfectly precarious.",
-      "author": "John C. Ransom",
-      "likes": 0,
-      "dislikes": 0,
-      "id": 9
-    },
-    {
-      "img": "https://fastly.picsum.photos/id/159/350/350.jpg?hmac=PPWwvteVG887pQSFG3cp9E-TOaMJu6Bxfa1jpIiP5_w",
-      "quote": "The crucial question one comes back to is the examination without that experience is meaningless. And I think it's true that society is becoming more and more passive, less and less fired up with enthusiasm, in many spheres.",
-      "author": "Peter Hammill",
-      "likes": 0,
-      "dislikes": 0,
-      "id": 10
     }
   ]
 }

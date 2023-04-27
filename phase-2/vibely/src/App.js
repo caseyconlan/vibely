@@ -9,8 +9,6 @@ import Favorites from "./Favorites";
 function App() {
   const [favorites, setFavorites] = useState([]);
 
-  console.log(favorites);
-
   useEffect(() => {
     fetch("http://localhost:3001/inspirojis")
       .then((r) => r.json())

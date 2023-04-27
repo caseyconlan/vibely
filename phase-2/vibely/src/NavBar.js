@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-  const activeStyle = { backgroundColor: "yellowgreen" };
+  const activestyle = { backgroundColor: "yellowgreen" };
 
   return (
     <div className="navbar">
@@ -11,17 +11,17 @@ function NavBar() {
       </Link>
       <div className="navbar-flex-container">
         <div className="flex-item">
-          <Link to="/" activeStyle={activeStyle}>
+          <Link to="/" activestyle={activestyle}>
             Home
           </Link>
         </div>
         <div className="flex-item">
-          <Link to="/about" activeStyle={activeStyle}>
+          <Link to="/about" activestyle={activestyle}>
             About
           </Link>
         </div>
         <div className="flex-item">
-          <Link to="/favorites" activeStyle={activeStyle}>
+          <Link to="/favorites" activestyle={activestyle}>
             Favorites
           </Link>
         </div>
