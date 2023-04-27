@@ -79,6 +79,38 @@
       "likes": 0,
       "dislikes": 0,
       "id": 10
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/599/350/350.jpg?hmac=J4xuuZQCmICxJGN7lgWDkd4xDyi6zcAIhJiTRIAIeCs",
+      "quote": "Colloquial poetry is to the real art as the barber's wax dummy is to sculpture.",
+      "author": "Ezra Pound",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 11
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/341/350/350.jpg?hmac=OcIQTbGJRx0FkCaTnLWBbg54x_SlVzVLTFkAC8hZBC4",
+      "quote": "Seeing that a Pilot steers the ship in which we sail, who will never allow us to perish even in the midst of shipwrecks, there is no reason why our minds should be overwhelmed with fear and overcome with weariness.",
+      "author": "John Calvin",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 12
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/7/350/350.jpg?hmac=CckZlcKsyC6Ccx847yTiKftOUTL-wZug26tlX-wtel8",
+      "quote": "Open the way before the new government to prove that it is for serving the people.",
+      "author": "Muqtada al Sadr",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 13
+    },
+    {
+      "img": "https://fastly.picsum.photos/id/220/350/350.jpg?hmac=I8BX8Fg9UVkOB74C1exWvExDIOJ51GdzCEEagiS9_yM",
+      "quote": "When it's said and done, the one thing I want to leave on this earth is hope. I have felt hopelessness, and it's a terrible feeling. Hopelessness will destroy you. I want to bring hope to other people.",
+      "author": "Paula Deen",
+      "likes": 0,
+      "dislikes": 0,
+      "id": 14
     }
   ]
 }
